@@ -8,7 +8,7 @@ A personal ranker that allows you to rank and sort your own top lineup for Mnet'
 
 <b>Updates</b>
 
-04/29: Ranker + customization has been made
-04/30: Ground + I-Land ranks have been added
+* 04/29: Ranker + customization has been made.
+* 04/30: Ground + I-Land ranks have been added.
 
 
