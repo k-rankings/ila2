@@ -394,7 +394,7 @@ function removeRankedTrainee(trainee) {
 }
 
 //const currentURL = "https://il2ranker.github.io/";
-const currentURL = "http://127.0.0.1:5501/index.html"
+const currentURL = "https://k-rankings.github.io/ila2/"
 // Serializes the ranking into a string and appends that to the current URL
 function generateShareLink() {
   let shareCode = ranking.map(function (trainee) {
