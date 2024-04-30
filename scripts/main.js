@@ -352,7 +352,7 @@ function filterTrainees(event) {
   let filterText = event.target.value.toLowerCase();
   // filters trainees based on name, alternate names, nationality and birth year
   filteredTrainees = trainees.filter(function (trainee) {
-    let initialMatch = includesIgnCase(trainee.name_romanized, filterText) || includesIgnCase (trainee.birthyear, filterText) || includesIgnCase (trainee.nationality, filterText);
+    let initialMatch = includesIgnCase(trainee.name_romanized, filterText) || includesIgnCase (trainee.birthyear, filterText) || includesIgnCase (trainee.nationality, filterText) || includesIgnCase (trainee.grade, filterText);
     // if alernates exists then check them as well
     let alternateMatch = false;
     let alternates = alternateRomanizations[trainee.name_romanized.toLowerCase()]
@@ -371,6 +371,7 @@ function filterTrainees(event) {
 function includesIgnCase(mainString, subString) {
   return mainString.toLowerCase().includes(subString.toLowerCase());
 }
+
 
 // Finds the first blank spot for
 function addRankedTrainee(trainee) {

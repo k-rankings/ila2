@@ -18,6 +18,9 @@
   --c-rank: #fd586a;
   --d-rank: #8de079;
   --f-rank: #0167eb;
+
+  --iland-rank: #a62ee2;
+  --ground-rank: #7d7d7d;
   --no-rank: #252628;
 }
 
@@ -296,6 +299,12 @@ body {
 .no-rank-border {
   border: none;
 }
+.ground-rank-border {
+  border: 5px solid var(--ground-rank);
+}
+.iland-rank-border {
+  border: 5px solid var(--iland-rank);
+}
 .eliminated .table__entry-icon-border {
   border: 5px solid var(--no-rank);
 }
@@ -399,6 +408,12 @@ body {
 /* Styles for different badge colors */
 .bg-no {
   background-color: var(--no-rank);
+}
+.bg-iland {
+  background-color: var(--iland-rank);
+}
+.bg-ground {
+  background-color: var(--ground-rank);
 }
 .bg-a {
   background-color: var(--a-rank);
