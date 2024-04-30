@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122340888-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122340888-1');
+  </script>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>I-LAND 2 Ranker</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="initial-scale = 2.0, maximum-scale=1.0" />
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+</head>
+<body>
+  <div id="top-banner">
+    <img id="banner-image" src="assets/logo_white.png"/>
+    <p id="banner-title">I-LAND 2 RANKER</p>
+    <p id="banner-subtitle">Make your own top lineup!</p>
+  </div>
+  <input type="button" id="settings-button" value="   " onclick="showSettings()"/>
+  <div id="settings">
+  <input id="table__filter-customize" class="customize_title" type="button" value="Customize Lineup Number"/>
+    <div class="scrolling" id="scrolling">
+      <input id="customize_lineup" type="button" value="3" onclick="lineupNumber(3)"/>
+    <input id="customize_lineup" type="button" value="4" onclick="lineupNumber(4)"/>
+    <input id="customize_lineup" type="button" value="5" onclick="lineupNumber(5)"/>
+    <input id="customize_lineup" type="button" value="6" onclick="lineupNumber(6)"/>
+    <input id="customize_lineup" type="button" value="7" onclick="lineupNumber(7)"/>
+    <input id="customize_lineup" type="button" value="8" onclick="lineupNumber(8)"/>
+    <input id="customize_lineup" type="button" value="9" onclick="lineupNumber(9)"/>
+    <input id="customize_lineup" type="button" value="10" onclick="lineupNumber(10)"/>
+    <input id="customize_lineup" type="button" value="11" onclick="lineupNumber(11)"/>
+    <input id="customize_lineup" type="button" value="12" onclick="lineupNumber(12)"/>
+    </div></div>
+  <div class="flex-container padded-box">
+    <div>
+      <div id="tooltip-container">
+        <!-- add tool tip faq stuff here -->
+      </div>
+      <div id="table">
+        <div id="table__filter-container">
+          <input id="table__filter-input" oninput="filterTrainees(event)" type="text" placeholder="Search"/>
+        </div>
+        <div id="table__entry-container">
+          <!-- <div class="table__entry">
+            <div class="table__entry-icon">
+              <img class="table__entry-img" src="assets/trainees/RyuSarang.jpg" />
+              <div class="table__entry-icon-border a-rank-border"></div>
+              <img class="table__entry-check" src="assets/check.png"/>
+            </div>
+            <div class="table__entry-text">
+              <strong><span class="name">Ryu Sarang</span></strong>
+              <span class="hangul">(유사랑)</span>
+              <span class="nationality">South Korea</span>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div id="filters-container">
+        <div id="filters-header"><strong>Filters</strong></div>
+        <div>
+          <input type="checkbox" name="show-eliminated" id="show-eliminated" onclick="showEliminatedClick(event)"/>
+          <label class="checkbox-label" for="show-eliminated">Show Eliminated (At Bottom)</label>
+        </div>
+        <div>
+          <input type="checkbox" name="show-top7" id="show-top7" onclick="showTop7Click(event)"/>
+          <label class="checkbox-label" for="show-top7">Show Current Top 7</label>
+        </div>
+      </div>
+      <div id="sharelink-container">
+        <!-- button -->
+        <input type="button" id="getlink-button" value="Get link" onclick="generateShareLink()"/>
+        <!-- text box -->
+        <input type="text" placeholder="http://" id="getlink-textbox" readonly/>
+        <!-- button in text box -->
+        <input type="button" id="copylink-button" value="Copy" onclick="copyLink()"/>
+      </div>
+    </div>
+    <div id="ranking__pyramid">
+      <div id="ranking__title"><strong>TOP <span id="top-number"></span></strong></div>
+      <div class="ranking__row">
+        <!-- <div class="ranking__entry">
+          <div class="ranking__entry-icon">
+            <img class="ranking__entry-img" src="assets/trainees/RyuSarang.jpg" />
+            <div class="ranking__entry-icon-border a-rank-border"></div>
+            <div class="ranking__entry-icon-badge">1</div>
+          </div>
+          <div class="ranking__row-text">
+            <div class="name"><strong>Gabi</strong></div>
+            <div class="nationality">South Korea</div>
+          </div>
+        </div> -->
+      </div>
+      <div class="ranking__row"></div>
+      <div class="ranking__row"></div>
+      <div class="ranking__row"></div>
+    </div>
+  </div>
+  
+
+  <!-- Load in script files -->
+  <script src="scripts/csv.js"></script>
+  <script src="scripts/dragula.min.js"></script>
+  <script src="scripts/dragdrop.js"></script>
+  <script src="scripts/traineesort.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+</html>
