@@ -6,5 +6,9 @@ A personal ranker that allows you to rank and sort your own top lineup for Mnet'
 * This was forked from [iland2 top7 ranker](https://github.com/il2ranker/il2ranker.github.io) which was forked from the amazing [produce48 ranker](https://github.com/produce48/produce48.github.io).
 * This adds custom lineup numbers so you can make custom lineups.
 
-<b>WIP</b>
-* Use the colors for Land/Ground instead when the ep airs
+<b>Updates</b>
+
+04/29: Ranker + customization has been made
+04/30: Ground + I-Land ranks have been added
+
+
