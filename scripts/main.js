@@ -118,7 +118,7 @@ function newTrainee() {
 // Constructor for a blank ranking list
 function newRanking() {
   // holds the ordered list of rankings that the user selects  
-  let ranking = new Array(12);
+  let ranking = new Array(24);
   for (let i = 0; i < ranking.length; i++) {
     ranking[i] = newTrainee();
   }
@@ -420,7 +420,8 @@ function lineupNumber(number) {
     9: [1,3,5],
     10:[1,2,3,4],
     11:[1,2,3,5],
-    12:[1,2,4,5]
+    12:[1,2,4,5],
+    24:[1,2,3,4,6,8]
   }
   const VALID = Object.hasOwn(rowsRankLists, number);
   if (VALID == true) {
